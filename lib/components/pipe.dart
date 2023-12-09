@@ -1,3 +1,4 @@
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flame_game_jam/game/configuration.dart';
@@ -32,6 +33,7 @@ class Pipe extends SpriteComponent with HasGameRef<FlappyBirdGame> {
         sprite = Sprite(pipe);
         break;
     }
+    add(RectangleHitbox());
   }
 
 }

@@ -8,7 +8,7 @@ import '../components/background.dart';
 import '../components/ground.dart';
 import 'configuration.dart';
 
-class FlappyBirdGame extends FlameGame with TapDetector {
+class FlappyBirdGame extends FlameGame with TapDetector, HasCollisionDetection {
   late Bird bird;
   Timer interval = Timer(Config.pipeInterval, repeat: true);
 
