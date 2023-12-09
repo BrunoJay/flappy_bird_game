@@ -1,4 +1,5 @@
 import 'package:flame/game.dart';
+import 'package:flame_game_jam/screens/game_over_screen.dart';
 import 'package:flame_game_jam/screens/main_menu_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ void main() {
     initialActiveOverlays: const [MainMenuScreen.id],
     overlayBuilderMap: {
       'mainmenu': (context, _) => MainMenuScreen(game: game),
+      'gameover': (context, _) => GameOverScreen(game: game)
     },
   ));
 }

@@ -50,7 +50,12 @@ class Bird extends SpriteGroupComponent<BirdMovement> with HasGameRef<FlappyBird
     gameOver();
   }
 
+  void reset() {
+    position = Vector2(50, gameRef.size.y/2 - size.y /2);
+  }
+
   void gameOver() {
+    gameRef.overlays.add('gameover');
     gameRef.pauseEngine();
   }
 
