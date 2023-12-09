@@ -1,6 +1,6 @@
-# flame_game_jam
+# flappy bird game
 
-A new Flutter project.
+A new Flutter Flame project.
 
 ## Getting Started
 
