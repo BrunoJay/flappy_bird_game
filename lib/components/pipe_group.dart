@@ -41,7 +41,7 @@ class PipeGroup extends PositionComponent with HasGameRef<FlappyBirdGame> {
 
     if (position.x < -10) {
       removeFromParent();
-      debugPrint("removed");
+      updateScore();
     }
 
     if (gameRef.isHit) {
@@ -50,4 +50,7 @@ class PipeGroup extends PositionComponent with HasGameRef<FlappyBirdGame> {
     }
   }
 
+  void updateScore() {
+    gameRef.bird.score += 1;
+  }
 }
