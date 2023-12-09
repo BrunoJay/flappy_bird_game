@@ -36,7 +36,7 @@ class Bird extends SpriteGroupComponent<BirdMovement> with HasGameRef<FlappyBird
     add(
       MoveByEffect(
         Vector2(0, Config.gravity),
-        EffectController(duration: 0.2, curve: Curves.decelerate),
+        EffectController(duration: 0.3, curve: Curves.decelerate),
         onComplete: () => current = BirdMovement.down,
       ),
     );

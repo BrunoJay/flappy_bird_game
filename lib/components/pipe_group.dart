@@ -19,7 +19,7 @@ class PipeGroup extends PositionComponent with HasGameRef<FlappyBirdGame> {
     position.x = gameRef.size.x;
 
     final heightMinusGround = gameRef.size.y - Config.groundHeight;
-    final spacing = 100 + _random.nextDouble() * (heightMinusGround / 4); //spacing in between the pipes
+    final spacing = 200 + _random.nextDouble() * (heightMinusGround / 4); //spacing in between the pipes
     final centerY = spacing + _random.nextDouble() * (heightMinusGround - spacing);
     await addAll([
       Pipe(
